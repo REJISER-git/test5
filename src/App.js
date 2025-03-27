@@ -45,8 +45,8 @@ function App() {
       if (response.ok) {
         setModalMessage('Пользователь успешно создан');
         setModalIsOpen(true);
-        fetchUsers(); // Refresh the list
-        reset(); // Reset form
+        fetchUsers(); 
+        reset(); 
       }
     } catch (error) {
       console.error('Error creating user:', error);
@@ -63,7 +63,7 @@ function App() {
       if (response.ok) {
         setModalMessage('Пользователь удален');
         setModalIsOpen(true);
-        fetchUsers(); // Refresh the list
+        fetchUsers(); 
       }
     } catch (error) {
       console.error('Error deleting user:', error);
@@ -77,7 +77,7 @@ function App() {
 
   return (
       <div className="container">
-        {/* Form */}
+       
         <form onSubmit={handleSubmit(onSubmit)} className="form">
           <div className="form-group">
             <input
